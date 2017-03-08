@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+<style>
+ header {
+      text-align: center;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkePWjfeC2GYalceiMZKSkufZwtc_SCD5aG_-uVM-yVw0qf53R");
+      background-size: cover;
+      color: white;
+    }
+ a {
+      color: white;
+    }
+ 
+body {
+  font-family: 'Aclonica', sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
+  background: #232323;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 60px 0 0 0;
+  border-radius: 12px;
+}
+ 
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 85px;
+  color: #800000;
+  margin: 70px 0 0 10px;
+}
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 12px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.first{
+  background-image: url("https://cdn20.patchcdn.com/users/22893595/20161007/030710/styles/T600x450/public/article_images/24120120029_54ebe1d8ba_k-1475867220-9447.jpg");
+}
+.second{
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhYBtFuHpCy1kortkMRU0lPK6-x2AxEXLk4nLg0iS3so2PM82fwQ");
+}
+.third{
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNhHcrRFLWRds00cUQcAV_F6kDkit20D5UbMeYof-mQC1LKO6efg");
+}
+.writer{
+  float: right;
+}
+  
+
+small {
+opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+ 
+ .show-description small {
+   opacity: 1;
+ }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+ h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+}
+div {
+  margin:20px 12px 0 12px;
+}
+p {
+  font-size: 20px;
+  line-height: 24px;
+  
+}
+small {
+  font-size: 16px;
+}
+}
+</style>
+
+</head>
+
+<body>
+<header>
+<h1>News Express</h1>
+<h2>Grab World's Latest News Here!</h2>
+ 
+</header>
+
+<div class="first">
+  <p>Donald Trump backs House Republican healthcare plan, aims to cut drug prices<span class="writer">Reuter\ March 7,2017</span><br />
+  <small>President Donald Trump on Tuesday backed a draft U.S. House of Representatives Republican bill to repeal and replace the Obamacare healthcare law and said it was open to negotiation, adding that he was working on a system to cut drug prices.
+House Republicans on Monday unveiled healthcare legislation that would eliminate the requirement that most Americans obtain medical insurance and create a system of tax credits to coax people to purchase private insurance on the open market.
+House Democratic leader Nancy Pelosi said the Republican measure would take millions of people off health insurance rolls and would benefit the wealthy.
+
+</small></p>
+</div>
+<button>Like</button>
+
+<div class="second  ">
+  <p>General strike shuts much of southern Nepal after 3 killed<span class="writer">AP | Updated: Mar 7, 2017</span><br />
+  <small>KATHMANDU, Nepal: A general strike called by ethnic groups a day after police fire killed at least three protesters shut down markets, schools and transport in much of southern Nepal on Tuesday.
+Police had opened fire Monday on protesters attempting to disrupt a political rally, killing at least three and wounding dozens in southern Nepal, which has been hit by violent protests over the last year.On Tuesday, protesters blocked main highways and towns to enforce the general strike.
+They attacked several government offices and even vandalized a vehicle from the National Human Rights Commission, which had a team monitoring the situation. 
+</small></p>
+</div>
+<button>Like</button>
+
+<div class="third">
+  <p>US deploys anti-ballistic missile defence system to South Korea<span class="writer">KK ,Seoul\Updated: Mar 7, 2017</span><br />
+  <small>US missile launchers and other equipment needed to set up a controversial missile defence system have arrived in South Korea, the US and South Korean militaries said Tuesday, a day after North Korea test-launched four ballistic missiles into the ocean near Japan.
+The plans to deploy the Terminal High-Altitude Area defence system, or THAAD, by the end of this year have angered not only North Korea, but also China and Russia, which see the system's powerful radars as a secuch agreed to provide one of its golf courses in as the site of THAAD. The South Korean government also raised worries about a reported ban on Chinese tour groups visiting the country.
+
+</small></p>
+</div>
+<button>Like</button>
+
+ <script>
+$("div").on("click",function() {
+$(this).toggleClass('show-description');
+});
+  </script>
+
+</body>
